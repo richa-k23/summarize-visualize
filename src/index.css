@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 38% 95%;
+    --foreground: 210 10% 30%;
+
+    --card: 210 38% 95%;
+    --card-foreground: 210 10% 30%;
+
+    --popover: 210 38% 95%;
+    --popover-foreground: 210 10% 30%;
+
+    --primary: 210 50% 55%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 210 30% 90%;
+    --secondary-foreground: 210 10% 30%;
+
+    --muted: 210 30% 90%;
+    --muted-foreground: 210 8% 50%;
+
+    --accent: 216 34% 80%;
+    --accent-foreground: 210 10% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 10% 85%;
+    --input: 210 10% 85%;
+    --ring: 210 50% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-pastel-blue text-foreground font-sans;
+  }
+}
+
+.file-drop-area {
+  @apply border-2 border-dashed rounded-lg p-8 transition-colors duration-300 ease-in-out;
+}
+
+.file-drop-area.active {
+  @apply border-primary bg-pastel-blue/20;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}

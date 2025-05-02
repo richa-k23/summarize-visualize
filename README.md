@@ -46,7 +46,7 @@ A React application that lets users upload or paste text, generates a summary us
 
 ## Deployment
 
-This application is deployed on Netlify. You can view the live demo at [project-url].
+This application is deployed on Netlify. You can view the live demo at [https://summarize-visualize.netlify.app/].
 
 ## Future Enhancements
 
